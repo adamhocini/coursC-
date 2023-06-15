@@ -15,30 +15,23 @@ using namespace std;
 class Combat; // Déclaration anticipée de la classe Combat
 
 class Boxer {
-private:
-    string niveau;
-    Combat* coinBleu; // Pointeur vers le Combat du coin bleu
-    Combat* coinRouge; // Pointeur vers le Combat du coin rouge
-    Combat* vainqueur; // Pointeur vers le Combat vainqueur
+    
+    private:
+        string nom;
+        double poids;
 
-public:
-    // Constructeur
-    Boxer(std::string niveau);
+    public:
+        // Constructeur
+        Boxer(string nom, double poids);
 
-    // Destructeur
-    ~Boxer();
+        // Destructeur
+        ~Boxer();
 
-    // Méthodes d'accès aux coins et aux Combats
-    Combat* getCoinBleu() const;
-    Combat* getCoinRouge() const;
-    void setCoinBleu(Combat* combat);
-    void setCoinRouge(Combat* combat);
-
-    // Méthode pour obtenir le vainqueur
-    Combat* getVainqueur() const;
-
-    // Méthode pour désigner le vainqueur
-    void designerVainqueur(Combat* combat);
+        // Méthodes d'accès aux attributs
+        string GetNom() const;
+        void SetPoids(double poids);
+        double GetPoids() const;
+    
 };
 
 #endif // BOXER_HPP

@@ -39,6 +39,7 @@ public:
 
     // Méthode pour désigner le vainqueur
     void designerVainqueur(Boxer* Boxer);
+    
 };
 
 #endif /* Combat_hpp */
