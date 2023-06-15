@@ -41,7 +41,6 @@ public:
     void designerVainqueur(Boxer* Boxer);
     
     
-    
 };
 
 #endif /* Combat_hpp */
