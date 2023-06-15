@@ -43,12 +43,11 @@ int main() {
         Boxer* boxeur_2 = new Boxer("Box_2", 78.0);
         cout << "Adresse de boxeur_2 : " << boxeur_2 << std::endl;
         cout << "Nom de boxeur_2 : " << boxeur_2->GetNom() << std::endl;
-        cout << "Poids de boxeur_2 : " << boxeur_2->GetPoids() << " kg" << std::endl;
+        std::cout << "Poids de boxeur_2 : " << boxeur_2->GetPoids() << " kg" << std::endl;
 
         // Libération de la mémoire
         delete boxeur_2;
 
-        // Libération de la mémoire
         delete boxer1;
         delete boxer2;
 

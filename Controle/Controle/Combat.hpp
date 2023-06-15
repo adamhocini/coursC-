@@ -25,8 +25,14 @@ public:
     // Constructeur
     Combat(string niveau);
 
-    // Destructeur
-    ~Combat();
+    Combat(const string& niveau) : niveau(niveau), coinBleu(nullptr), coinRouge(nullptr), vainqueur(nullptr) {
+            cout << "Constructeur de Combat : Niveau " << niveau << std::endl;
+        }
+
+        // Destructeur
+        ~Combat() {
+            cout << "Destructeur de Combat : Niveau " << niveau << std::endl;
+        }
 
     // Méthodes d'accès aux coins et aux Boxers
     Boxer* getCoinBleu() const;

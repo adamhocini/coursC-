@@ -20,8 +20,8 @@ Combat::Combat(string niveau) {
 }
 
 Combat::~Combat() {
-    // Rien à faire ici, pas de ressources à libérer
 }
+
 
 Boxer* Combat::getCoinBleu() const {
     return coinBleu;
