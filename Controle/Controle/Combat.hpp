@@ -14,36 +14,33 @@
 using namespace std;
 
 namespace Combat {
-
 class Combat {
 private:
-    string niveau;
-    Boxer* coinBleu; // Pointeur vers le boxeur du coin bleu
-    Boxer* coinRouge; // Pointeur vers le boxeur du coin rouge
-    Boxer* vainqueur; // Pointeur vers le boxeur vainqueur
-    
+
+    std::string niveau;
+    Boxer* coinBleu; // Pointeur vers le Boxer du coin bleu
+    Boxer* coinRouge; // Pointeur vers le Boxer du coin rouge
+    Boxer* vainqueur; // Pointeur vers le Boxer vainqueur
+
 public:
     // Constructeur
     Combat(string niveau);
-     
+
     // Destructeur
     ~Combat();
-    
-    // Méthodes d'accès aux coins et aux boxeurs
+
+    // Méthodes d'accès aux coins et aux Boxers
     Boxer* getCoinBleu() const;
     Boxer* getCoinRouge() const;
-    void setCoinBleu(Boxer* boxer);
-    void setCoinRouge(Boxer* boxer);
-    
+    void setCoinBleu(Boxer* Boxer);
+    void setCoinRouge(Boxer* Boxer);
+
     // Méthode pour obtenir le vainqueur
     Boxer* getVainqueur() const;
-    
+
     // Méthode pour désigner le vainqueur
-    void designerVainqueur(Boxer* boxer);
+    void designerVainqueur(Boxer* Boxer);
 };
 }
-
-
-
-
 #endif /* Combat_hpp */
+
