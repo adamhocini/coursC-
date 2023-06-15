@@ -10,7 +10,6 @@
 
 #include <stdio.h>
 #include <string>
-#include "Combat.hpp"
 using namespace std;
 
 namespace Boxer {

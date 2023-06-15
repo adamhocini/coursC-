@@ -27,4 +27,4 @@ public:
     string getNom() const;
     void setPoids(double poids);
     double getPoids() const;
-};
+}
