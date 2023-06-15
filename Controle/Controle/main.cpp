@@ -6,10 +6,19 @@
 //
 
 #include <iostream>
+#include "Boxer.hpp"
+#include "Combat.hpp"
+using namespace Boxer;
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main() {
+    cout << "---> DEBUT"<< endl << endl;
+    
+    
+    // Création des boxeurs
+    
+    
+    cout <<endl << " ---> FIN" << endl;
+
 }
  
