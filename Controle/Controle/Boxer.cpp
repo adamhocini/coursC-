@@ -19,19 +19,18 @@ Boxer::Boxer(string nom, double poids) {
 
 // Destructeur
 Boxer::~Boxer() {
-    // Rien à faire ici, pas de ressources à libérer
 }
 
 // Méthodes d'accès aux attributs
-string Boxer::getNom() const {
+string Boxer::GetNom() {
     return nom;
 }
 
-void Boxer::setPoids(double poids) {
+void Boxer::SetPoids(double poids) {
     this->poids = poids;
 }
 
-double Boxer::getPoids() const {
+double Boxer::GetPoids() {
     return poids;
 }
 

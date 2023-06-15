@@ -16,7 +16,7 @@ using namespace std;
 class Combat {
 private:
 
-    std::string niveau;
+    string niveau;
     Boxer* coinBleu; // Pointeur vers le Boxer du coin bleu
     Boxer* coinRouge; // Pointeur vers le Boxer du coin rouge
     Boxer* vainqueur; // Pointeur vers le Boxer vainqueur
@@ -39,6 +39,8 @@ public:
 
     // Méthode pour désigner le vainqueur
     void designerVainqueur(Boxer* Boxer);
+    
+    
     
 };
 

@@ -13,27 +13,27 @@ using namespace std;
 
 int main() {
     // Création des boxeurs
-    Boxer* boxeur1 = new Boxer("Boxeur 1", 70.5);
-    Boxer* boxeur2 = new Boxer("Boxeur 2", 68.2);
+        Boxer* boxer1 = new Boxer("Boxer 1", 70.5);
+        Boxer* boxer2 = new Boxer("Boxer 2", 75.2);
 
-    // Création du combat
-    Combat* combat = new Combat("Niveau 1");
+        // Création du combat
+        Combat combat("Niveau 1");
 
-    // Attribution des boxeurs aux coins
-    combat->setCoinBleu(boxeur1);
-    combat->setCoinRouge(boxeur2);
+        // Définition des boxeurs pour le combat
+        combat.setCoinBleu(boxer1);
+        combat.setCoinRouge(boxer2);
 
-    // Désignation du vainqueur
-    combat->designerVainqueur(boxeur1);
+        // Accès aux boxeurs dans le combat
+        Boxer* coinBleu = combat.getCoinBleu();
+        Boxer* coinRouge = combat.getCoinRouge();
 
-    // Récupération des informations
-    Boxer* vainqueur = combat->getVainqueur();
-    cout << "Le vainqueur est : " << vainqueur->getNom() << endl;
+        // Affichage des noms des boxeurs
+        cout << "Boxeur du coin bleu : " << coinBleu->GetNom() << endl;
+        cout << "Boxeur du coin rouge : " << coinRouge->GetNom() << endl;
 
-    // Nettoyage de la mémoire
-    delete combat;
-    delete boxeur1;
-    delete boxeur2;
+        // Libération de la mémoire
+        delete boxer1;
+        delete boxer2;
 
     return 0;
 }

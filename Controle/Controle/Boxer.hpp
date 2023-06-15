@@ -12,7 +12,6 @@
 #include <string>
 using namespace std;
 
-class Combat; // Déclaration anticipée de la classe Combat
 
 class Boxer {
     
@@ -28,9 +27,10 @@ class Boxer {
         ~Boxer();
 
         // Méthodes d'accès aux attributs
-        string GetNom() const;
+        string GetNom();
         void SetPoids(double poids);
-        double GetPoids() const;
+        double GetPoids();
+    
     
 };
 
