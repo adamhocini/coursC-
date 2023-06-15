@@ -13,7 +13,6 @@
 #include "Boxer.hpp"
 using namespace std;
 
-namespace Combat {
 class Combat {
 private:
 
@@ -41,6 +40,6 @@ public:
     // Méthode pour désigner le vainqueur
     void designerVainqueur(Boxer* Boxer);
 };
-}
+
 #endif /* Combat_hpp */
 

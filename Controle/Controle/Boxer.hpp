@@ -12,26 +12,32 @@
 #include <string>
 using namespace std;
 
-namespace Boxer {
-    class Boxer
-    {
-        private:
-        string nom;
-        double poids;
+class Boxer { // Déclaration anticipée de la classe Boxer
+private:
+    string niveau;
+    Boxer* coinBleu; // Pointeur vers le Boxer du coin bleu
+    Boxer* coinRouge; // Pointeur vers le Boxer du coin rouge
+    Boxer* vainqueur; // Pointeur vers le Boxer vainqueur
 
-        public:
-        // Constructeur
-        Boxer(string nom, double poids);
-        
-        // Destructeur
-        ~Boxer();
+public:
+    // Constructeur
+    Boxer(string niveau);
 
-        // Méthodes d'accès aux attributs
-        string getNom() const;
-        void setPoids(double poids);
-        double getPoids() const;
+    // Destructeur
+    ~Boxer();
+
+    // Méthodes d'accès aux coins et aux Boxers
+    Boxer* getCoinBleu() const;
+    Boxer* getCoinRouge() const;
+    void setCoinBleu(Boxer* Boxer);
+    void setCoinRouge(Boxer* Boxer);
+
+    // Méthode pour obtenir le vainqueur
+    Boxer* getVainqueur() const;
+
+    // Méthode pour désigner le vainqueur
+    void designerVainqueur(Boxer* Boxer);
 };
-}
 
  
 #endif /* Boxer_hpp */

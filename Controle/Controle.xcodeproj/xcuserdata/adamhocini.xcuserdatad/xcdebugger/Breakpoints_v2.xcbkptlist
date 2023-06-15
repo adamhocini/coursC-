@@ -18,6 +18,38 @@
             endingLineNumber = "22"
             landmarkName = "main()"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "00E236BA-EA10-4F71-BFC1-3C5EF9A4D5AF - e4818bb5da725621"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Controle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adamhocini/Documents/Isitech/B2/Module%20C++/controleC++/Controle/Controle/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "00E236BA-EA10-4F71-BFC1-3C5EF9A4D5AF - e4818bb5da725642"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Controle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/adamhocini/Documents/Isitech/B2/Module%20C++/controleC++/Controle/Controle/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
