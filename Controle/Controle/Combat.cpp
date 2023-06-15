@@ -19,33 +19,5 @@ Combat::Combat(string niveau) {
 }
 
 
-Combat::~Combat() {
-    // Assurez-vous de libérer la mémoire des boxeurs
-    delete coinBleu;
-    delete coinRouge;
-    delete vainqueur;
-}
+Combat::~Combat() {}
 
-Boxeur* Combat::getCoinBleu() const {
-    return coinBleu;
-}
-
-Boxeur* Combat::getCoinRouge() const {
-    return coinRouge;
-}
-
-void Combat::setCoinBleu(Boxeur* boxeur) {
-    coinBleu = boxeur;
-}
-
-void Combat::setCoinRouge(Boxeur* boxeur) {
-    coinRouge = boxeur;
-}
-
-Boxeur* Combat::getVainqueur() const {
-    return vainqueur;
-}
-
-void Combat::designerVainqueur(Boxeur* boxeur) {
-    vainqueur = boxeur;
-}
