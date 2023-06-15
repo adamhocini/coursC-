@@ -8,7 +8,6 @@
 #include <iostream>
 #include "Boxer.hpp"
 #include "Combat.hpp"
-using namespace Boxer;
 using namespace std;
 
 int main() {
