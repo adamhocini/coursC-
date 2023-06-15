@@ -11,6 +11,7 @@
 #include "Combat.hpp"
 using namespace std;
 
+
 Combat::Combat(string niveau) {
     this->niveau = niveau;
     coinBleu = nullptr;
@@ -18,6 +19,30 @@ Combat::Combat(string niveau) {
     vainqueur = nullptr;
 }
 
+Combat::~Combat() {
+    // Rien à faire ici, pas de ressources à libérer
+}
 
-Combat::~Combat() {}
+Boxer* Combat::getCoinBleu() const {
+    return coinBleu;
+}
 
+Boxer* Combat::getCoinRouge() const {
+    return coinRouge;
+}
+
+void Combat::setCoinBleu(Boxer* boxeur) {
+    coinBleu = boxeur;
+}
+
+void Combat::setCoinRouge(Boxer* boxeur) {
+    coinRouge = boxeur;
+}
+
+Boxer* Combat::getVainqueur() const {
+    return vainqueur;
+}
+
+void Combat::designerVainqueur(Boxer* boxeur) {
+    vainqueur = boxeur;
+}

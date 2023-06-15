@@ -7,25 +7,33 @@
 
 #include <stdio.h>
 #include <string>
+#include "Boxer.hpp"
 using namespace std;
 
 
-class Boxer {
-private:
-    string nom;
-    double poids;
+// Constructeur
+Boxer::Boxer(string nom, double poids) {
+    this->nom = nom;
+    this->poids = poids;
+}
 
-public:
-    // Constructeur
-    Boxer(string nom, double poids);
+// Destructeur
+Boxer::~Boxer() {
+    // Rien à faire ici, pas de ressources à libérer
+}
 
-    // Destructeur
-    ~Boxer();
+// Méthodes d'accès aux attributs
+string Boxer::getNom() const {
+    return nom;
+}
 
-    // Méthodes d'accès aux attributs
-    string getNom() const;
-    void setPoids(double poids);
-    double getPoids() const;
-};
+void Boxer::setPoids(double poids) {
+    this->poids = poids;
+}
+
+double Boxer::getPoids() const {
+    return poids;
+}
+
 
 
