@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C696EF972A3B318E00154C1C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C696EF962A3B318E00154C1C /* main.cpp */; };
 		C696EF9F2A3B31B700154C1C /* Boxer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C696EF9D2A3B31B700154C1C /* Boxer.cpp */; };
+		C696EFA22A3B32A500154C1C /* Combat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C696EFA02A3B32A500154C1C /* Combat.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		C696EF962A3B318E00154C1C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C696EF9D2A3B31B700154C1C /* Boxer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Boxer.cpp; sourceTree = "<group>"; };
 		C696EF9E2A3B31B700154C1C /* Boxer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Boxer.hpp; sourceTree = "<group>"; };
+		C696EFA02A3B32A500154C1C /* Combat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Combat.cpp; sourceTree = "<group>"; };
+		C696EFA12A3B32A500154C1C /* Combat.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Combat.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				C696EF962A3B318E00154C1C /* main.cpp */,
 				C696EF9E2A3B31B700154C1C /* Boxer.hpp */,
 				C696EF9D2A3B31B700154C1C /* Boxer.cpp */,
+				C696EFA12A3B32A500154C1C /* Combat.hpp */,
+				C696EFA02A3B32A500154C1C /* Combat.cpp */,
 			);
 			path = Controle;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C696EFA22A3B32A500154C1C /* Combat.cpp in Sources */,
 				C696EF9F2A3B31B700154C1C /* Boxer.cpp in Sources */,
 				C696EF972A3B318E00154C1C /* main.cpp in Sources */,
 			);
